@@ -11,10 +11,6 @@ Welcome to Swiggy's documentation!
    :caption: Contents:
 
    context
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   vision
+   user_guide
+   config

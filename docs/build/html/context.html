@@ -39,6 +39,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Vision" href="vision.html" />
     <link rel="prev" title="Welcome to Swiggy’s documentation!" href="contents.html" /> 
 </head>
 
@@ -87,14 +88,11 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Shuttle</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#share">Share</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#continuous-delivery-cd">Continuous Delivery (CD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#vision">Vision</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#user-guide">User Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#continuous-delivery-cd">Continuous Delivery (CD)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#service-definition-file-app-yaml">Service Definition File (app.yaml)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#meta">Meta</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#config">Config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#config-h"><code class="docutils literal notranslate"><span class="pre">config-h</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#secret">Secret</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#compute">Compute</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#datastores">Datastores</a></li>
@@ -107,6 +105,9 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="vision.html">Vision</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Config</a></li>
 </ul>
 
             
@@ -177,33 +178,12 @@
   <div class="section" id="shuttle">
 <h1>Shuttle<a class="headerlink" href="#shuttle" title="Permalink to this headline">¶</a></h1>
 <p>Version </p>
-<div class="section" id="share">
-<h2>Share<a class="headerlink" href="#share" title="Permalink to this headline">¶</a></h2>
-<p>Star this space</p>
 <div class="section" id="continuous-delivery-cd">
-<h3>Continuous Delivery (CD)<a class="headerlink" href="#continuous-delivery-cd" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="vision">
-<h3>Vision<a class="headerlink" href="#vision" title="Permalink to this headline">¶</a></h3>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Problem statement
-Currently, to deploy any service on any given environment
-developer has to perform multiple operations such as bringing up infrastructure,
-creating environment variables, defining network routes and DNS entries,
-bringing up service, creating database schemas, populating metadata, creating monitoring and
-alerting dashboards, injecting secrets (mysql,aws).</p>
-</div>
-<div class="admonition tip">
-<p class="first admonition-title">Tip</p>
-<p class="last">Most of the process is manual and performed
-once per environment. As the process is manual and best effort based, it is error prone and
-time consuming, frustrating and not exactly the same across the environment.</p>
-</div>
-</div>
-<div class="section" id="user-guide">
-<h3>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h3>
-</div>
+<h2>Continuous Delivery (CD)<a class="headerlink" href="#continuous-delivery-cd" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="vision.html#vision-h"><span class="std std-ref">Vision</span></a></p>
+<hr class="docutils" />
+<p><a class="reference internal" href="user_guide.html#user-guide"><span class="std std-ref">User guide</span></a></p>
+<hr class="docutils" />
 <div class="section" id="service-definition-file-app-yaml">
 <h3>Service Definition File (app.yaml)<a class="headerlink" href="#service-definition-file-app-yaml" title="Permalink to this headline">¶</a></h3>
 </div>
@@ -213,19 +193,8 @@ time consuming, frustrating and not exactly the same across the environment.</p>
 <div class="section" id="environment-variables">
 <h3>Environment Variables<a class="headerlink" href="#environment-variables" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="config">
-<h3>Config<a class="headerlink" href="#config" title="Permalink to this headline">¶</a></h3>
-<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">overrides</span><span class="p">:</span>
-<span class="o">-</span> <span class="n">env</span><span class="p">:</span> <span class="s2">&quot;sf&quot;</span>
-<span class="nb">list</span><span class="p">:</span>
-<span class="o">-</span> <span class="n">configName</span><span class="p">:</span> <span class="s2">&quot;thread_pool&quot;</span>
-<span class="n">value</span><span class="p">:</span> <span class="mi">20</span>
-<span class="o">-</span> <span class="n">env</span><span class="p">:</span> <span class="s2">&quot;u4&quot;</span>
-<span class="nb">list</span><span class="p">:</span>
-<span class="o">-</span> <span class="n">configName</span><span class="p">:</span> <span class="s2">&quot;thread_pool&quot;</span>
-<span class="n">value</span><span class="p">:</span> <span class="mi">10</span>
-</pre></div>
-</div>
+<div class="section" id="config-h">
+<h3><a class="reference internal" href="config.html#config-h"><span class="std std-ref">Config</span></a><a class="headerlink" href="#config-h" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="secret">
 <h3>Secret<a class="headerlink" href="#secret" title="Permalink to this headline">¶</a></h3>
@@ -260,6 +229,7 @@ time consuming, frustrating and not exactly the same across the environment.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="vision.html" class="btn btn-neutral float-right" title="Vision" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="contents.html" class="btn btn-neutral float-left" title="Welcome to Swiggy’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
